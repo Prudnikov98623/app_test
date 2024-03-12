@@ -3,11 +3,8 @@ from django.shortcuts import render
 
 def  index(request):
     context = {
-        'title': 'Home',
-        'content': 'Page content home',
-        'list': ['one', 'two', 'three'],
-        'dict': {'key': 'value'},
-        'is_auth': False
+        'title': 'Home - Главная',
+        'content': 'Магазин мебели HOME',
     }
     return render(request, 'main/index.html', context)
 
